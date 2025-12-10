@@ -13,7 +13,7 @@ char* read_prompt(int prmpt_max_length){
     // Comprueba que el resultado de asignacion  con la funcion fgets no haya sido null
     if((command = fgets(prompt, prmpt_max_length, stdin)) != NULL){
         command[strcspn(command, "\n")] = 0;
-        return prompt_result;
+        return command;
     } // Si hubiese un error lo manejo aqui
     else if (ferror(stdin)) {
         perror("Error");
@@ -21,17 +21,20 @@ char* read_prompt(int prmpt_max_length){
     }
 }
 
-int get_command_length(char *command){
-    return strspn(command, "\0");
+int get_command_length(const char *command){
+    return strlen(command);
 }
 
-char* tokenize_command(char *command, int length){
-    char *token;
-    char *tokens[length];
-    int i = 0;
+char** tokenize_command(const char *command, int *token_count){
+    char *command_copy;
+    char **tokens;
+    int command_length = get_command_length(command);
+    
+    // Hago una copia de command para tokenizarla
+    command_copy = malloc(sizeof(char) * command_length);
+    strlcpy(command_copy, command, command_length + 1);
 
-    token = strtok(command, " ");
-    do{
-        tokens[i++] = token;
-    } while (token = strtok(NULL, ","));
+    
+    // Para arreglar, hacer una primera pasada con strtok() para contar los tokens que habra
+    // Despues, hacer una segunda
 }

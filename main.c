@@ -2,11 +2,16 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(){
-    char *prmpt = read_prompt(100);
+    char *cmmnd;
+    int *token_count;
 
-    printf("%s\n", prmpt);
+    cmmnd = read_prompt(100);
+
+//    printf("%s\n", cmmnd);
+    tokenize_command(cmmnd, token_count);
 
     return 0;
 }
