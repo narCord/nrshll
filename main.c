@@ -1,4 +1,5 @@
 #include "parser.h"
+#include "exec.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -6,20 +7,21 @@
 #include <unistd.h>
 
 int main(){
-    char *command;
+    char cmmnd[100];
     int c = 0;
     int *counter = &c;
-    char testinput[] = " ls -l   caca /pedo  --pis";
+    char testinput[] = " ls -l   -a";
     char **tokens;
-    //cmmnd = read_prompt(100);
 
-    //printf("%s\n", cmmnd);
-    tokens = tokenize(testinput, counter);
+    cmmnd = read_prompt(100);
+
+    tokens = tokenize(cmmnd, counter);
     printf("Found tokens %d\n", *counter);
-
-    for (int i = 0; i < *counter; i++){
+    for(int i = 0; i < *counter; i++){
         printf("%s\n", tokens[i]);
     }
+
+    execute_external(tokens);
 
     return 0;
 }

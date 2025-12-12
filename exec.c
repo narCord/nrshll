@@ -29,6 +29,12 @@ bool determine_command_type(const char *cmd){
     }
 }
 
-void execute_external(){
-    
+// Ejectuo esta funcion dentro de un proceso hijo creado en el loop principal
+int execute_external(char **cmd_and_args){
+    // execlp acepta un char *, que es el nombre del programa a ejecutar
+    // y un char ** que seran los argumentos del programa (ignora la primera posicion
+    // del char **, que seria el nombre del programa) 
+    execvp(cmd_and_args[0], cmd_and_args);
+
+    return 0;
 }
