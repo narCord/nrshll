@@ -4,14 +4,16 @@
 #include <bsd/string.h>
 #include "parser.h"
 
-char *read_prompt(int prmpt_max_length){
-    char prompt[prmpt_max_length];
+char *read_prompt(int max_length){
+    char *line;
     char *command;
     
     // Lee el prompt escrito por el usuario
     printf("> ");
+
+    line = malloc(max_length);
     // Comprueba que el resultado de asignacion  con la funcion fgets no haya sido null
-    if((command = fgets(prompt, prmpt_max_length, stdin)) != NULL){
+    if((command = fgets(line, max_length, stdin)) != NULL){
         command[strcspn(command, "\n")] = 0;
         return command;
     } // Si hubiese un error lo manejo aqui
