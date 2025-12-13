@@ -5,6 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <sys/wait.h>
 
 int main(){
@@ -21,10 +22,8 @@ int main(){
         command = read_prompt(max_length); 
         tokenized_cmd = tokenize(command, counter); 
 
-        for (int i = 0; i < *counter; i++){
-            printf("%s\n", tokenized_cmd[i]);
-        }
-
+        fflush(stdin);
+        fflush(stdout);
         pid = fork();
         if (pid == -1){
             //error

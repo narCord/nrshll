@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 #include <stdlib.h>
 #include <bsd/string.h>
 #include "parser.h"
@@ -21,6 +22,8 @@ char *read_prompt(int max_length){
         perror("Error");
         exit(0);
     }
+
+    return NULL;
 }
 
 int get_command_length(const char *command){
