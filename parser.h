@@ -1,3 +1,3 @@
 char *read_prompt(int max_length);
-int get_command_length(const char *command);
-char **tokenize(const char *command, int *counter);
+int get_cmd_length(const char *cmd);
+char **tokenize(const char *cmd, int *counter);

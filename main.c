@@ -12,15 +12,15 @@ int main(){
     int max_length = (int) sysconf(_SC_ARG_MAX);
     int c = 0;
     int *counter = &c;
-    char *command;
+    char *cmd;
     char **tokenized_cmd;
     pid_t pid;
 
-    printf("Max command length %d\n", max_length);
+    printf("Max cmd length %d\n", max_length);
 
     while(true){
-        command = read_prompt(max_length); 
-        tokenized_cmd = tokenize(command, counter); 
+        cmd = read_prompt(max_length); 
+        tokenized_cmd = tokenize(cmd, counter); 
 
         fflush(stdin);
         fflush(stdout);
@@ -30,13 +30,14 @@ int main(){
         }
         else if (pid == 0){ // hijo
             execute_external(tokenized_cmd);
+            exit(0);
         }
         else if (pid > 0){ // padre
             int status = 0;
             waitpid(pid, &status, 0);
         }
 
-        free(command);
+        free(cmd);
     }
 
     return 0;

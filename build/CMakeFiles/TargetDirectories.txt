@@ -1,0 +1,3 @@
+/home/nar/Bulk/Projects/nrshll/build/CMakeFiles/nrshll.dir
+/home/nar/Bulk/Projects/nrshll/build/CMakeFiles/edit_cache.dir
+/home/nar/Bulk/Projects/nrshll/build/CMakeFiles/rebuild_cache.dir

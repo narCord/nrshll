@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/nrshll.dir/link.d CMakeFiles/nrshll.dir/main.c.o CMakeFiles/nrshll.dir/parser.c.o CMakeFiles/nrshll.dir/exec.c.o -o nrshll
