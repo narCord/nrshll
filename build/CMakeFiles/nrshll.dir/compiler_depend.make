@@ -72,7 +72,6 @@ CMakeFiles/nrshll.dir/exec.c.o: /home/nar/Bulk/Projects/nrshll/exec.c \
   /usr/include/sys/types.h \
   /usr/include/unistd.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
 CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
@@ -165,7 +164,6 @@ CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
   /usr/include/sys/wait.h \
   /usr/include/unistd.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
 CMakeFiles/nrshll.dir/parser.c.o: /home/nar/Bulk/Projects/nrshll/parser.c \
@@ -283,6 +281,14 @@ CMakeFiles/nrshll.dir/main.c.o:
 
 /usr/include/bits/ss_flags.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
+
+/usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/bits/types/stack_t.h:
+
+/usr/include/bits/signum-arch.h:
+
 /usr/include/bits/signal_ext.h:
 
 /usr/include/bits/sigcontext.h:
@@ -294,14 +300,6 @@ CMakeFiles/nrshll.dir/main.c.o:
 /home/nar/Bulk/Projects/nrshll/main.c:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
-
-/usr/include/bits/types/struct_sigstack.h:
-
-/usr/include/bits/types/stack_t.h:
-
-/usr/include/bits/signum-arch.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
 
 /usr/include/unistd.h:
 

@@ -73,7 +73,6 @@ CMakeFiles/nrshll.dir/exec.c.o
  /usr/include/sys/types.h
  /usr/include/unistd.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
 CMakeFiles/nrshll.dir/main.c.o
@@ -167,7 +166,6 @@ CMakeFiles/nrshll.dir/main.c.o
  /usr/include/sys/wait.h
  /usr/include/unistd.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
 CMakeFiles/nrshll.dir/parser.c.o

@@ -1,32 +1,22 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
 
 // true = interno,  false = externo
-bool determine_command_type(const char *cmd){
-    if (strcmp(cmd, "cd")){
-        return true;
+int determine_command_type(const char *cmd){
+    if (strcmp(cmd, "cd") == 0){
+        return 1;
     }
-    else if (strcmp(cmd, "exit")){
-        return true;
+    else if (strcmp(cmd, "exit") == 0){
+        return 1;
     }
-    else if (strcmp(cmd, "echo")){
-        return true; 
-    }
-    else if (strcmp(cmd, "pwd")){
-        return true; 
-    }
-    else if (strcmp(cmd, "help")){
-        return true; 
-    }
-    else if (strcmp(cmd, "alias")){
-         return true;
+    else if (strcmp(cmd, "help") == 0){
+        return 1; 
     }
     else{
-        return false; 
+        return 0; 
     }
 }
 
@@ -36,7 +26,7 @@ int execute_external(char **cmd_and_args){
     // y un char ** que seran los argumentos del programa (ignora la primera posicion
     // del char **, que seria el nombre del programa) 
     if (execvp(cmd_and_args[0], cmd_and_args)){
-        printf("error");
+        printf("error\n");
     }
     
     return 0;

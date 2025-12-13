@@ -5,7 +5,6 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <sys/wait.h>
 
 int main(){
@@ -22,21 +21,30 @@ int main(){
         cmd = read_prompt(max_length); 
         tokenized_cmd = tokenize(cmd, counter); 
 
-        fflush(stdin);
-        fflush(stdout);
-        pid = fork();
-        if (pid == -1){
+        if(!determine_command_type(tokenized_cmd[0])){
+            printf("external\n"); 
+            fflush(stdout);
+            
+            pid = fork();
+            if (pid == -1){
+                //error
+            }
+            else if (pid == 0){ // hijo
+                execute_external(tokenized_cmd);
+                exit(0);
+            }
+            else if (pid > 0){ // padre
+                int status = 0;
+                waitpid(pid, &status, 0);
+            }
+        }
+        else{
             //error
         }
-        else if (pid == 0){ // hijo
-            execute_external(tokenized_cmd);
-            exit(0);
-        }
-        else if (pid > 0){ // padre
-            int status = 0;
-            waitpid(pid, &status, 0);
-        }
 
+        fflush(stdout);
+        fflush(stdin);
+        
         free(cmd);
     }
 

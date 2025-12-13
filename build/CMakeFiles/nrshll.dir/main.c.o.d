@@ -36,11 +36,9 @@ CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
- /usr/include/sys/wait.h /usr/include/signal.h \
- /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
- /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/stdlib-float.h /usr/include/sys/wait.h \
+ /usr/include/signal.h /usr/include/bits/signum-generic.h \
+ /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
  /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
  /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
  /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
