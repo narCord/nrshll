@@ -22,7 +22,8 @@ int main(){
         tokenized_cmd = tokenize(cmd, counter); 
 
         if(!determine_command_type(tokenized_cmd[0])){
-            printf("external\n"); 
+            printf("external\n");
+            fflush(stdin);
             fflush(stdout);
             
             pid = fork();
@@ -31,6 +32,8 @@ int main(){
             }
             else if (pid == 0){ // hijo
                 execute_external(tokenized_cmd);
+                free(cmd);
+                free(tokenized_cmd);
                 exit(0);
             }
             else if (pid > 0){ // padre
@@ -39,12 +42,16 @@ int main(){
             }
         }
         else{
-            //error
+            printf("internal\n");
+            fflush(stdin);
+            fflush(stdout);
+            execute_internal(tokenized_cmd);
         }
 
         fflush(stdout);
         fflush(stdin);
         
+        free(tokenized_cmd);
         free(cmd);
     }
 
