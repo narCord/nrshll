@@ -5,6 +5,7 @@ nrshll: \
   CMakeFiles/nrshll.dir/main.c.o \
   CMakeFiles/nrshll.dir/parser.c.o \
   CMakeFiles/nrshll.dir/exec.c.o \
+  CMakeFiles/nrshll.dir/prompt.c.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libgcc_s.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libgcc_s.so \
@@ -38,6 +39,8 @@ CMakeFiles/nrshll.dir/main.c.o:
 CMakeFiles/nrshll.dir/parser.c.o:
 
 CMakeFiles/nrshll.dir/exec.c.o:
+
+CMakeFiles/nrshll.dir/prompt.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
 

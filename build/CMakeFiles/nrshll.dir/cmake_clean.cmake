@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nrshll.dir/main.c.o.d"
   "CMakeFiles/nrshll.dir/parser.c.o"
   "CMakeFiles/nrshll.dir/parser.c.o.d"
+  "CMakeFiles/nrshll.dir/prompt.c.o"
+  "CMakeFiles/nrshll.dir/prompt.c.o.d"
   "nrshll"
   "nrshll.pdb"
 )

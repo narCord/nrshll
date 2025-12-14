@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nar/Bulk/Projects/nrshll/exec.c" "CMakeFiles/nrshll.dir/exec.c.o" "gcc" "CMakeFiles/nrshll.dir/exec.c.o.d"
   "/home/nar/Bulk/Projects/nrshll/main.c" "CMakeFiles/nrshll.dir/main.c.o" "gcc" "CMakeFiles/nrshll.dir/main.c.o.d"
   "/home/nar/Bulk/Projects/nrshll/parser.c" "CMakeFiles/nrshll.dir/parser.c.o" "gcc" "CMakeFiles/nrshll.dir/parser.c.o.d"
+  "/home/nar/Bulk/Projects/nrshll/prompt.c" "CMakeFiles/nrshll.dir/prompt.c.o" "gcc" "CMakeFiles/nrshll.dir/prompt.c.o.d"
   "" "nrshll" "gcc" "CMakeFiles/nrshll.dir/link.d"
   )
 

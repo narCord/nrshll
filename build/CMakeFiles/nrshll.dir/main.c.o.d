@@ -1,6 +1,7 @@
 CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
  /usr/include/stdc-predef.h /home/nar/Bulk/Projects/nrshll/parser.h \
- /home/nar/Bulk/Projects/nrshll/exec.h /usr/include/stdio.h \
+ /home/nar/Bulk/Projects/nrshll/exec.h \
+ /home/nar/Bulk/Projects/nrshll/prompt.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
@@ -47,4 +48,10 @@ CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
  /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
  /usr/include/bits/sigstksz.h /usr/include/bits/ss_flags.h \
  /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
- /usr/include/bits/signal_ext.h /usr/include/bits/types/idtype_t.h
+ /usr/include/bits/signal_ext.h /usr/include/bits/types/idtype_t.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/pthread_stack_min-dynamic.h \
+ /usr/include/bits/pthread_stack_min.h /usr/include/bits/posix2_lim.h

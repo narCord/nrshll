@@ -208,6 +208,30 @@ parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nrshll.dir/build.make CMakeFiles/nrshll.dir/parser.c.s
 .PHONY : parser.c.s
 
+prompt.o: prompt.c.o
+.PHONY : prompt.o
+
+# target to build an object file
+prompt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nrshll.dir/build.make CMakeFiles/nrshll.dir/prompt.c.o
+.PHONY : prompt.c.o
+
+prompt.i: prompt.c.i
+.PHONY : prompt.i
+
+# target to preprocess a source file
+prompt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nrshll.dir/build.make CMakeFiles/nrshll.dir/prompt.c.i
+.PHONY : prompt.c.i
+
+prompt.s: prompt.c.s
+.PHONY : prompt.s
+
+# target to generate assembly for a file
+prompt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nrshll.dir/build.make CMakeFiles/nrshll.dir/prompt.c.s
+.PHONY : prompt.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -227,6 +251,9 @@ help:
 	@echo "... parser.o"
 	@echo "... parser.i"
 	@echo "... parser.s"
+	@echo "... prompt.o"
+	@echo "... prompt.i"
+	@echo "... prompt.s"
 .PHONY : help
 
 

@@ -6,6 +6,7 @@ add_executable(nrshll
     main.c
     parser.c
     exec.c
+    prompt.c
 )
 
 target_include_directories(nrshll PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})

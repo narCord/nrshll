@@ -85,12 +85,12 @@ clean: CMakeFiles/nrshll.dir/clean
 CMakeFiles/nrshll.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nrshll.dir/build.make CMakeFiles/nrshll.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nrshll.dir/build.make CMakeFiles/nrshll.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nar/Bulk/Projects/nrshll/build/CMakeFiles --progress-num=1,2,3,4 "Built target nrshll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nar/Bulk/Projects/nrshll/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target nrshll"
 .PHONY : CMakeFiles/nrshll.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nrshll.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nar/Bulk/Projects/nrshll/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nar/Bulk/Projects/nrshll/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nrshll.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nar/Bulk/Projects/nrshll/build/CMakeFiles 0
 .PHONY : CMakeFiles/nrshll.dir/rule
@@ -102,7 +102,7 @@ nrshll: CMakeFiles/nrshll.dir/rule
 # codegen rule for target.
 CMakeFiles/nrshll.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nrshll.dir/build.make CMakeFiles/nrshll.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nar/Bulk/Projects/nrshll/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target nrshll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nar/Bulk/Projects/nrshll/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target nrshll"
 .PHONY : CMakeFiles/nrshll.dir/codegen
 
 # clean rule for target.

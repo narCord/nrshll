@@ -9,9 +9,6 @@ char *read_prompt(int max_length){
     char *line;
     char *cmd;
     
-    // Lee el prompt escrito por el usuario
-    printf("> ");
-
     line = malloc(max_length);
     // Comprueba que el resultado de asignacion  con la funcion fgets no haya sido null
     if((cmd = fgets(line, max_length, stdin)) != NULL){

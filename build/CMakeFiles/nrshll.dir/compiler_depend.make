@@ -77,6 +77,7 @@ CMakeFiles/nrshll.dir/exec.c.o: /home/nar/Bulk/Projects/nrshll/exec.c \
 CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
   /home/nar/Bulk/Projects/nrshll/exec.h \
   /home/nar/Bulk/Projects/nrshll/parser.h \
+  /home/nar/Bulk/Projects/nrshll/prompt.c \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -89,8 +90,13 @@ CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
   /usr/include/bits/getopt_core.h \
   /usr/include/bits/getopt_posix.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
   /usr/include/bits/posix_opt.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -151,6 +157,8 @@ CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
   /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -163,8 +171,10 @@ CMakeFiles/nrshll.dir/main.c.o: /home/nar/Bulk/Projects/nrshll/main.c \
   /usr/include/sys/ucontext.h \
   /usr/include/sys/wait.h \
   /usr/include/unistd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
 CMakeFiles/nrshll.dir/parser.c.o: /home/nar/Bulk/Projects/nrshll/parser.c \
   /home/nar/Bulk/Projects/nrshll/parser.h \
@@ -230,6 +240,69 @@ CMakeFiles/nrshll.dir/parser.c.o: /home/nar/Bulk/Projects/nrshll/parser.c \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
+CMakeFiles/nrshll.dir/prompt.c.o: /home/nar/Bulk/Projects/nrshll/prompt.c \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/unistd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+
 nrshll: /usr/lib/Scrt1.o \
   /usr/lib/crti.o \
   /usr/lib/crtn.o \
@@ -244,239 +317,262 @@ nrshll: /usr/lib/Scrt1.o \
   /usr/lib/libc_nonshared.a \
   CMakeFiles/nrshll.dir/exec.c.o \
   CMakeFiles/nrshll.dir/main.c.o \
-  CMakeFiles/nrshll.dir/parser.c.o
+  CMakeFiles/nrshll.dir/parser.c.o \
+  CMakeFiles/nrshll.dir/prompt.c.o
 
 
-CMakeFiles/nrshll.dir/main.c.o:
+CMakeFiles/nrshll.dir/prompt.c.o:
 
-/usr/lib/libc.so.6:
+/usr/include/errno.h:
 
-/usr/lib/ld-linux-x86-64.so.2:
+/usr/include/bits/types/clockid_t.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
+/usr/include/bits/types/time_t.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
+/usr/include/bits/struct_rwlock.h:
 
-/usr/lib/libgcc_s.so.1:
+/home/nar/Bulk/Projects/nrshll/parser.h:
 
-/usr/lib/libgcc_s.so:
+/usr/include/bits/types/struct_timespec.h:
 
-/usr/lib/crtn.o:
+/usr/include/bits/types/locale_t.h:
 
-/usr/lib/Scrt1.o:
+/usr/include/bits/uintn-identity.h:
 
-/usr/include/sys/wait.h:
+/usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/include/signal.h:
+/usr/include/endian.h:
 
-/usr/include/bits/types/sigval_t.h:
+/usr/include/linux/limits.h:
 
-/usr/include/bits/types/siginfo_t.h:
+/usr/include/bits/local_lim.h:
 
-/usr/lib/crti.o:
+/usr/include/bits/unistd_ext.h:
 
-/usr/include/bits/types/sigevent_t.h:
+/usr/include/bits/types/__locale_t.h:
 
-/usr/include/bits/types/sig_atomic_t.h:
+/usr/include/bits/types/__FILE.h:
 
-/usr/include/bits/ss_flags.h:
+/usr/include/bits/types/FILE.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
-
-/usr/include/bits/types/struct_sigstack.h:
-
-/usr/include/bits/types/stack_t.h:
-
-/usr/include/bits/signum-arch.h:
-
-/usr/include/bits/signal_ext.h:
-
-/usr/include/bits/sigcontext.h:
-
-/usr/lib/libc.so:
-
-/home/nar/Bulk/Projects/nrshll/exec.h:
-
-/home/nar/Bulk/Projects/nrshll/main.c:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
-
-/usr/include/unistd.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/strings.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/bsd/string.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/bits/sigstack.h:
-
-/usr/include/bits/sigaction.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/home/nar/Bulk/Projects/nrshll/parser.c:
-
-/usr/include/bits/getopt_posix.h:
-
-/usr/include/bits/sigstksz.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/types/idtype_t.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/bits/signum-generic.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/home/nar/Bulk/Projects/nrshll/exec.c:
-
-/usr/include/features-time64.h:
-
-/usr/include/bsd/sys/cdefs.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/bits/siginfo-consts.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-CMakeFiles/nrshll.dir/parser.c.o:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/confname.h:
-
-/usr/include/stdio.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/bits/environments.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/bits/posix_opt.h:
-
-/usr/include/bits/sigthread.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/types/__sigval_t.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/sys/ucontext.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/lib/libc_nonshared.a:
-
-/usr/include/bits/siginfo-arch.h:
-
-/usr/include/bits/getopt_core.h:
+/usr/include/limits.h:
 
 /usr/include/bits/types.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
 
-/usr/include/bits/types/FILE.h:
+/usr/include/bits/siginfo-arch.h:
 
-/usr/include/bits/stdlib-float.h:
+/usr/lib/libc_nonshared.a:
 
-/usr/include/bits/types/__FILE.h:
+/usr/include/bits/floatn-common.h:
 
-/usr/include/bits/types/__locale_t.h:
+/usr/include/bits/types/sigset_t.h:
 
-/usr/include/bits/unistd_ext.h:
+/usr/include/features.h:
 
-/usr/include/bits/types/__mbstate_t.h:
+/usr/include/bits/endianness.h:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/bits/waitflags.h:
 
-/usr/include/endian.h:
+/usr/include/bits/types/__sigset_t.h:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/typesizes.h:
-
-CMakeFiles/nrshll.dir/exec.c.o:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/sigevent-consts.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/home/nar/Bulk/Projects/nrshll/parser.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
+/usr/include/bits/endian.h:
 
 /usr/include/bits/waitstatus.h:
 
+/usr/include/bits/timesize.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/alloca.h:
+
 /usr/include/bits/atomic_wide_counter.h:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/include/bits/posix_opt.h:
 
-/usr/include/errno.h:
+/usr/include/bits/errno.h:
 
-/usr/include/features.h:
+/usr/include/bits/wordsize.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/bsd/sys/cdefs.h:
+
+/usr/include/features-time64.h:
+
+/home/nar/Bulk/Projects/nrshll/exec.c:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+CMakeFiles/nrshll.dir/parser.c.o:
+
+/usr/include/bits/select.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/signum-generic.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/bits/types/idtype_t.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/home/nar/Bulk/Projects/nrshll/parser.c:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/bits/sigstack.h:
+
+CMakeFiles/nrshll.dir/exec.c.o:
+
+/usr/include/linux/errno.h:
+
+/usr/include/bsd/string.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/strings.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/siginfo-consts.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+
+/home/nar/Bulk/Projects/nrshll/main.c:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
+
+/home/nar/Bulk/Projects/nrshll/exec.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/lib/libc.so:
+
+/usr/include/bits/types/__sigval_t.h:
+
+/home/nar/Bulk/Projects/nrshll/prompt.c:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/lib/Scrt1.o:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/signal_ext.h:
+
+/usr/include/bits/signum-arch.h:
+
+/usr/include/bits/sigevent-consts.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/types/stack_t.h:
+
+/usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/bits/pthread_stack_min.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/ss_flags.h:
+
+/usr/include/bits/types/sigevent_t.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/types/sig_atomic_t.h:
+
+/usr/lib/crti.o:
+
+/usr/include/bits/types/siginfo_t.h:
+
+/usr/include/bits/types/sigval_t.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/bits/sigstksz.h:
+
+/usr/lib/crtn.o:
+
+/usr/lib/libgcc_s.so:
+
+/usr/include/bits/confname.h:
+
+/usr/lib/libgcc_s.so.1:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/lib/libc.so.6:
+
+CMakeFiles/nrshll.dir/main.c.o:
